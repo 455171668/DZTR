@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=0 && python main.py \
+ python main.py \
 --dataset_file city \
 --output_dir logs/Cityscapes2FoggyCityscapes/R50_ms4  \
 -c config/DA/Cityscapes2FoggyCityscapes/DINO_4scale_C2F.py \
