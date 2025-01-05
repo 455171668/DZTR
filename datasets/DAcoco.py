@@ -673,17 +673,17 @@ def build_city_DA(image_set, args,strong_aug):
 
     #---源域
     PATHS_Source = {
-        "train": ("",
-                  ""),
-        "val": ("",
-                ""),
+        "train": ("datasets/cityscapes/leftImg8bit/train/",
+                  "datasets/cityscapes/annotations/cityscapes_train.json"),
+        "val": ("datasets/cityscapes/leftImg8bit/val/",
+                "datasets/cityscapes/annotations/cityscapes_val.json"),
     }
     #----目标域
     PATHS_Target = {
-        "train": ("",
-                  ""),
-        "val": ("",
-                ""),
+        "train": ("datasets/cityscapes/leftImg8bit_foggy/train/",
+                  "datasets/cityscapes/annotations/foggy_cityscapes_train.json"),
+        "val": ("datasets/cityscapes/leftImg8bit_foggy/val/",
+                "datasets/cityscapes/annotations/foggy_cityscapes_val.json"),
     }
 
     # add some hooks to datasets
